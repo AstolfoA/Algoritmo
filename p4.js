@@ -17,6 +17,6 @@ const objectString = [
 ]
 
 const getName = (array) => {
-    return array.map((element) => element.edad)
+    return array.map((element) => element.nombre)
 }
 console.log(getName(objectString))
