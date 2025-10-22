@@ -120,3 +120,4 @@ const elementos = [
     {nombre: "Oro", peso: 195}
 ];
 console.log("10. Ordenados por peso:", ordenarPorPeso(elementos));
+
