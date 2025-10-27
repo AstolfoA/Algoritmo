@@ -12,7 +12,7 @@
 
 // 2
 
-const numbers = [4, 15, 8, 23, 7, 11, 10]
+const numbers = [4, 15, 8, 23, 7]
 const countNumber = (array) => {
     return array.filter((i) => i >= 10).length
 }

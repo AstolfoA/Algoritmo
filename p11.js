@@ -14,8 +14,9 @@
 
 const numbers =  [5, 12, 7, 3, 20];
 const numGrande = (array) => {
-    return Math.max(...array);
+    return Math.max(...array)
+}
+
     // return array.sort((a, b) => b - a) [0] 
 
-}
 console.log(numGrande(numbers))

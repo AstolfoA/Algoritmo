@@ -6,11 +6,11 @@
 const arrayString =  ["emma", "pava", "frontend"];
 
 
-const uppercase = (array) => {
-    return array.map((element) => element.toUpperCase() )
-}
-console.log(uppercase(arrayString));
+const upperCase = (array) => {
+    return array.map((element) => element.toUpperCase())
+};
+console.log(upperCase(arrayString));
 
 const numbersMayus = ["astolfo", "gaby", "emma"];
 
-console.log(uppercase(numbersMayus))
+console.log(upperCase(numbersMayus))

@@ -4,7 +4,7 @@ const numeros = [1, 2, 3, 4, 5];
 // Resultado esperado: 15
 
 const sumaNumeros = (array) => {
-    return array.reduce((acumulador, numero) => acumulador + numero, 0);
+    return array.reduce((acc, current) => acc + current, 0)
 }
 // const suma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
 
