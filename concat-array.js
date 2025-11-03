@@ -6,9 +6,12 @@ let integrado = [
   [4, 5],
 ];
 
-let newArray = integrado.reduce((a, b) => {
-    return a.concat(b);
+let newArray = [].concat(...integrado);
 
-});
+
+// integrado.reduce((a, b) => {
+    // return a.concat(b);
+
+// });
 
 console.log(newArray);

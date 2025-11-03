@@ -1,19 +1,22 @@
-// Encontrar el promedio de un array
+// Encontrar el Número Máximo en un Array Enunciado: Escribe una función que reciba un array de números y devuelva el valor máximo que hay en ese array. Ejemplo de entrada: [3, 7, 2, 9, 4] Ejemplo de salida: 9
 
-// Enunciado:
-// Dado un array de números, calcula el promedio (suma de todos los elementos dividido por la cantidad).
+let numbers =  [3, 7, 2, 9, 4];
 
-// Entrada:
-
-// [10, 20, 30, 40, 50]
-
-
-// Salida:
-
-// 30
-
-const numbers = [10, 20, 30, 40, 50];
-const calculateTheAverage = (array) => {
- return array.reduce((acc, current) => acc + current) /array.length
+const getMayor = (array,...rest) => {
+    return Math.max(...array)
 }
-console.log(calculateTheAverage(numbers))
+
+console.log(getMayor(numbers))
+
+// Contar la Cantidad de Caracteres en un Objeto Enunciado: Crea una función que recibe un objeto donde las claves son nombres y los valores son cadenas de caracteres, y devuelve la suma total de todos los caracteres en los valores. Ejemplo de
+
+let object = {food: 'arepa'
+};
+let object2 = {name: 'astolfo'};
+
+
+const stringValue = (obj, prop) => {
+    return obj[prop].length
+}
+
+console.log(stringValue(object, "arepa"))
