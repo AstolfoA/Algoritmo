@@ -35,7 +35,7 @@ console.log(tieneTres); // true
 
 const letras = ['a', 'b', 'c', 'd', 'e'];
 console.log(letras.slice(1, 3));     // ['b', 'c']
-console.log(letras.concat(['f', 'g'])); // ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+console.log(letras.concat(['f', 'g', 'h'])); // ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 // splice modifica el array original
 let letras2 = ['a', 'b', 'c', 'd', 'e'];
 letras2.splice(2, 1, 'z');
@@ -48,3 +48,22 @@ console.log(letras3); // ['e', 'd', 'c', 'b', 'a']
 let letras4 = ['d', 'a', 'c', 'b', 'e'];
 letras4.sort();
 console.log(letras4); // ['a', 'b', 'c', 'd', 'e']
+
+// metodos de reduccion
+const numeros1 = [1, 2, 3, 4, 5];
+
+// reduce - suma todos los números
+const suma = numeros.reduce((acumulador, actual) => acumulador + actual, 0);
+console.log(suma); // 15
+
+// some - verifica si hay números pares
+const hayPares = numeros.some(numero => numero % 2 === 0);
+console.log(hayPares); // true
+
+// every - verifica si todos son mayores que 0
+const todosMayoresQueCero = numeros.every(numero => numero > 0);
+console.log(todosMayoresQueCero); // true
+
+// findIndex - encuentra el índice del primer número mayor que 3
+const indice = numeros.findIndex(numero => numero > 3);
+console.log(indice); // 3

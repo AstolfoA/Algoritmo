@@ -19,4 +19,18 @@ const stringValue = (obj, prop) => {
     return obj[prop].length
 }
 
-console.log(stringValue(object, "arepa"))
+console.log(stringValue(object, 'food'))
+console.log(stringValue(object2, 'name'))
+
+// Filtrar Objetos por Propiedad Enunciado: Diseña una función que reciba un array de objetos y un valor de propiedad, y devuelva un array con los objetos que tengan esa propiedad igual al valor dado. Ejemplo de entrada: [{id: 1, nombre: "Ana"}, {id: 2, nombre: "Luis"}, {id: 3, nombre: "Ana"}], valor: "Ana"
+//  Ejemplo de salida: [{id: 1, nombre: "Ana"}, {id: 3, nombre: "Ana"}]
+
+let listName =  [{id: 1, nombre: "Ana"}, {id: 2, nombre: "Luis"}, {id: 3, nombre: "Ana"}];
+
+const filterName = (array, value) => {
+    let result = array.filter(element => element.nombre === value )
+    return result.length == 0 ? 'no hay' : result
+
+} 
+
+console.log(filterName(listName, 'Ana{'))
