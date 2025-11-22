@@ -29,8 +29,8 @@ let listName =  [{id: 1, nombre: "Ana"}, {id: 2, nombre: "Luis"}, {id: 3, nombre
 
 const filterName = (array, value) => {
     let result = array.filter(element => element.nombre === value )
-    return result.length == 0 ? 'no hay' : result
+    return result.length == 0 ? 'no existe' : result
 
 } 
 
-console.log(filterName(listName, 'Ana{'))
+console.log(filterName(listName, 'Ana'))

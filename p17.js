@@ -63,11 +63,47 @@ console.log([usuario1, usuario3]);
 const arregloPalabras = ["casa", "perro", "gato", "casa", "gato", "casa"];
 const conteoPalabras = {};
 
-for (let i = 0; i < arregloPalabras.length; i++) {
-    const palabras = 
+for ( let i = 0; i < arregloPalabras.length; i++) {
+    const palabra = arregloPalabras[i];
+    if (conteoPalabras[palabra]) {
+        conteoPalabras[palabra]++;
+    }else {
+        conteoPalabras[palabra] = 1;
+    }
+}
+
+console.log(conteoPalabras); 
+
+// Ejercicio 3: Combinar datos
+
+// Descripción:
+// Tienes dos arreglos: uno con nombres y otro con edades. Crea un nuevo arreglo de objetos donde cada objeto combine el nombre con la edad correspondiente.
+
+// Entrada:
+
+const nombres = ["Carlos", "Lucía", "Andrés"];
+const edades = [28, 22, 35];
+const miObject = {};
+
+// Salida esperada:
+
+[
+  { nombre: "Carlos", edad: 28 },
+  { nombre: "Lucía", edad: 22 },
+  { nombre: "Andrés", edad: 35 }
+]
+
+const objeto = Object.fromEntries(nombres.map((nombres, index) => [nombres, edades[index]]));
+
+nombres.forEach((nombres, index) => {
+    miObject[nombres] = edades[index];
+})
+
+const nameFilter = (array) => {
+    return array.map((persona) => `${persona.nombres} ${persona.edades}`)
 }
 
 
-
-
-console.log(conteoPalabras); 
+console.log(objeto)
+console.log(miObject)
+console.log(nameFilter(nombres, edades))
